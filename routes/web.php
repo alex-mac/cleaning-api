@@ -14,3 +14,9 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/chores/', 'ChoreController@index');
+//$router->post('/chores/', 'ChoreController@store');
+//$router->get('/chores/{chore_id}', 'ChoreController@show');
+//$router->put('/chores/{chores_id}', 'ChoreController@update');
+//$router->delete('/chores/{chores_id}', 'ChoreController@destroy');
